@@ -12,8 +12,28 @@ class visaDetailViewController: UIViewController {
 
     @IBOutlet var visaViews: [UIView]!
     
+    @IBOutlet var visaView: [UIView]!
+    
+    @IBOutlet weak var studentVisaWebButton: UIButton!
+    
+    @IBOutlet weak var visitorVisaWebButton: UIButton!
+    
+    @IBOutlet weak var protectionVisaWebButton: UIButton!
+    
+    @IBAction func gotoStudentVisaWeb(_ sender: UIButton) {
+        if sender == studentVisaWebButton{
+            openUrl(urlStr: "https://www.migratemeexperts.com.au/student-visa")
+        }
+        else if sender == visitorVisaWebButton{
+            openUrl(urlStr: "https://www.migratemeexperts.com.au/vistor-visa")
+        }
+        else if sender == protectionVisaWebButton{
+            openUrl(urlStr: "https://www.migratemeexperts.com.au/protectionvisa-886")
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        for view in visaViews{
+        for view in visaView{
             view.layer.borderColor = #colorLiteral(red: 0.6431372549, green: 0.7098039216, blue: 0.7843137255, alpha: 1)
             
             view.layer.borderWidth = 2
@@ -21,6 +41,7 @@ class visaDetailViewController: UIViewController {
             view.layer.cornerRadius = 16
         }
         super.viewWillAppear(true)
+        
     }
     
     @IBAction func backToPreviousPage(_ sender: UIButton) {
@@ -31,6 +52,14 @@ class visaDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func openUrl(urlStr:String!) {
+        
+        if let url = NSURL(string:urlStr) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+        
     }
     
 }

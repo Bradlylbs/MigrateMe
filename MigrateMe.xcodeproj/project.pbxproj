@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54308AF4CDBB803F15124496 /* Pods_MigrateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9AEBA4F2FF7B247C8EC806 /* Pods_MigrateMe.framework */; };
+		A21C4B1A215A12060054A10C /* EmployerSponseredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */; };
 		A27BDE592150A64200B16F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE582150A64200B16F22 /* AppDelegate.swift */; };
 		A27BDE5B2150A64200B16F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE5A2150A64200B16F22 /* ViewController.swift */; };
 		A27BDE5E2150A64200B16F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE5C2150A64200B16F22 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		639B17D212A7E74135968D12 /* Pods-MigrateMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MigrateMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-MigrateMe/Pods-MigrateMe.release.xcconfig"; sourceTree = "<group>"; };
 		9A9AEBA4F2FF7B247C8EC806 /* Pods_MigrateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MigrateMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerSponseredViewController.swift; sourceTree = "<group>"; };
 		A27BDE552150A64200B16F22 /* MigrateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MigrateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BDE582150A64200B16F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27BDE5A2150A64200B16F22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				A27BDE6F21547EA300B16F22 /* VisasViewController.swift */,
 				A27BDE77215491EE00B16F22 /* CoursesViewController.swift */,
 				A2E48E252159BF9A003D425E /* visaDetailViewController.swift */,
+				A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */,
 			);
 			path = MigrateMe;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				A27BDE592150A64200B16F22 /* AppDelegate.swift in Sources */,
 				A27BDE6E21546A1600B16F22 /* SideMenuTableViewController.swift in Sources */,
 				A27BDE78215491EE00B16F22 /* CoursesViewController.swift in Sources */,
+				A21C4B1A215A12060054A10C /* EmployerSponseredViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
