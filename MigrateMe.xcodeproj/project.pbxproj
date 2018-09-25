@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54308AF4CDBB803F15124496 /* Pods_MigrateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9AEBA4F2FF7B247C8EC806 /* Pods_MigrateMe.framework */; };
 		A27BDE592150A64200B16F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE582150A64200B16F22 /* AppDelegate.swift */; };
 		A27BDE5B2150A64200B16F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE5A2150A64200B16F22 /* ViewController.swift */; };
 		A27BDE5E2150A64200B16F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE5C2150A64200B16F22 /* Main.storyboard */; };
 		A27BDE602150A64300B16F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE5F2150A64300B16F22 /* Assets.xcassets */; };
 		A27BDE632150A64300B16F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE612150A64300B16F22 /* LaunchScreen.storyboard */; };
+		A27BDE6C2150B1F500B16F22 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE6B2150B1F500B16F22 /* MainPageViewController.swift */; };
+		A27BDE6E21546A1600B16F22 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE6D21546A1600B16F22 /* SideMenuTableViewController.swift */; };
+		A27BDE7021547EA300B16F22 /* VisasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE6F21547EA300B16F22 /* VisasViewController.swift */; };
+		A27BDE78215491EE00B16F22 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE77215491EE00B16F22 /* CoursesViewController.swift */; };
+		A2E48E262159BF9A003D425E /* visaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E48E252159BF9A003D425E /* visaDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639B17D212A7E74135968D12 /* Pods-MigrateMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MigrateMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-MigrateMe/Pods-MigrateMe.release.xcconfig"; sourceTree = "<group>"; };
+		9A9AEBA4F2FF7B247C8EC806 /* Pods_MigrateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MigrateMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BDE552150A64200B16F22 /* MigrateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MigrateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BDE582150A64200B16F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27BDE5A2150A64200B16F22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,13 @@
 		A27BDE5F2150A64300B16F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27BDE622150A64300B16F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27BDE642150A64300B16F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27BDE6A2150A82600B16F22 /* MigrateMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MigrateMe.h; sourceTree = "<group>"; };
+		A27BDE6B2150B1F500B16F22 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		A27BDE6D21546A1600B16F22 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		A27BDE6F21547EA300B16F22 /* VisasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisasViewController.swift; sourceTree = "<group>"; };
+		A27BDE77215491EE00B16F22 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		A2E48E252159BF9A003D425E /* visaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visaDetailViewController.swift; sourceTree = "<group>"; };
+		DE7F72BDC12C3A1680218E34 /* Pods-MigrateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MigrateMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MigrateMe/Pods-MigrateMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54308AF4CDBB803F15124496 /* Pods_MigrateMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22D9E2916C01F0F7ACBC4D36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9AEBA4F2FF7B247C8EC806 /* Pods_MigrateMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A8F2E1B224044452F02D7FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F72BDC12C3A1680218E34 /* Pods-MigrateMe.debug.xcconfig */,
+				639B17D212A7E74135968D12 /* Pods-MigrateMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A27BDE4C2150A64200B16F22 = {
 			isa = PBXGroup;
 			children = (
 				A27BDE572150A64200B16F22 /* MigrateMe */,
 				A27BDE562150A64200B16F22 /* Products */,
+				5A8F2E1B224044452F02D7FF /* Pods */,
+				22D9E2916C01F0F7ACBC4D36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +89,28 @@
 		A27BDE572150A64200B16F22 /* MigrateMe */ = {
 			isa = PBXGroup;
 			children = (
-				A27BDE582150A64200B16F22 /* AppDelegate.swift */,
+				A27BDE76215484D200B16F22 /* Supporting Files */,
 				A27BDE5A2150A64200B16F22 /* ViewController.swift */,
 				A27BDE5C2150A64200B16F22 /* Main.storyboard */,
-				A27BDE5F2150A64300B16F22 /* Assets.xcassets */,
-				A27BDE612150A64300B16F22 /* LaunchScreen.storyboard */,
 				A27BDE642150A64300B16F22 /* Info.plist */,
+				A27BDE6A2150A82600B16F22 /* MigrateMe.h */,
+				A27BDE6B2150B1F500B16F22 /* MainPageViewController.swift */,
+				A27BDE6D21546A1600B16F22 /* SideMenuTableViewController.swift */,
+				A27BDE6F21547EA300B16F22 /* VisasViewController.swift */,
+				A27BDE77215491EE00B16F22 /* CoursesViewController.swift */,
+				A2E48E252159BF9A003D425E /* visaDetailViewController.swift */,
 			);
 			path = MigrateMe;
+			sourceTree = "<group>";
+		};
+		A27BDE76215484D200B16F22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A27BDE5F2150A64300B16F22 /* Assets.xcassets */,
+				A27BDE612150A64300B16F22 /* LaunchScreen.storyboard */,
+				A27BDE582150A64200B16F22 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27BDE672150A64300B16F22 /* Build configuration list for PBXNativeTarget "MigrateMe" */;
 			buildPhases = (
+				FB3C5E5F2F8A64B924A487BA /* [CP] Check Pods Manifest.lock */,
 				A27BDE512150A64200B16F22 /* Sources */,
 				A27BDE522150A64200B16F22 /* Frameworks */,
 				A27BDE532150A64200B16F22 /* Resources */,
+				EC14FECE31D1D79AC2071702 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +181,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EC14FECE31D1D79AC2071702 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MigrateMe/Pods-MigrateMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MigrateMe/Pods-MigrateMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3C5E5F2F8A64B924A487BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MigrateMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A27BDE512150A64200B16F22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E48E262159BF9A003D425E /* visaDetailViewController.swift in Sources */,
 				A27BDE5B2150A64200B16F22 /* ViewController.swift in Sources */,
+				A27BDE6C2150B1F500B16F22 /* MainPageViewController.swift in Sources */,
+				A27BDE7021547EA300B16F22 /* VisasViewController.swift in Sources */,
 				A27BDE592150A64200B16F22 /* AppDelegate.swift in Sources */,
+				A27BDE6E21546A1600B16F22 /* SideMenuTableViewController.swift in Sources */,
+				A27BDE78215491EE00B16F22 /* CoursesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,17 +383,20 @@
 		};
 		A27BDE682150A64300B16F22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7F72BDC12C3A1680218E34 /* Pods-MigrateMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.MigrateMe";
+				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.MigrateMeEx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MigrateMe/MigrateMe.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +404,20 @@
 		};
 		A27BDE692150A64300B16F22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639B17D212A7E74135968D12 /* Pods-MigrateMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.MigrateMe";
+				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.MigrateMeEx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MigrateMe/MigrateMe.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
