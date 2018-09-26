@@ -21,6 +21,26 @@ class EmployerSponseredViewController: UIViewController {
         openUrl(urlStr: "https://www.migratemeexperts.com.au/employer-sponser-visa")
     }
     
+    @IBAction func gotoSkilledWeb(_ sender: UIButton) {
+        openUrl(urlStr: "https://www.migratemeexperts.com.au/general-skilled-migration-visa")
+    }
+    
+    @IBAction func gotoFamilyPage(_ sender: UIButton) {
+        openUrl(urlStr: "https://www.migratemeexperts.com.au/parnets-partner-visa")
+    }
+    
+    @IBAction func gotoMRTWeb(_ sender: UIButton) {
+        openUrl(urlStr: "https://www.migratemeexperts.com.au/mrt-aat-appeal")
+    }
+    
+    @IBAction func gotoBusinessWeb(_ sender: UIButton) {
+        openUrl(urlStr: "https://www.migratemeexperts.com.au/business-visa")
+    }
+    
+    @IBAction func gotoPartnerWeb(_ sender: UIButton) {
+        openUrl(urlStr: "https://www.migratemeexperts.com.au/partnervisa")
+    }
+    
     @IBAction func backtoMainPate(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
