@@ -27,11 +27,7 @@ class VisasViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBAction func backtomainpage(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func mainpage(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+        
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

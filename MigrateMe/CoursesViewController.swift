@@ -12,7 +12,7 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var courses = ["Accounting & Finance", "Information Technology", "Engineering", "Cookery & Hospitality Management", "Medicine & Nursing", "Architecuture and Building", "Social Work & Humanity", "Agriculture & Horticulture"]
     
-    var coursewebsite = ["https://www.migratemeexperts.com.au/accounting-finance", "https://www.migratemeexperts.com.au/informationtechnology", "https://www.migratemeexperts.com.au/engineering", "https://www.migratemeexperts.com.au/hospitality-cookery", "https://www.migratemeexperts.com.au/medicine-nursing", "https://www.migratemeexperts.com.au/architecture-building", "https://www.migratemeexperts.com.au/socialwork-humanity", "https://www.migratemeexperts.com.au/agriculture-horticulture"]
+    /*var coursewebsite = ["https://www.migratemeexperts.com.au/accounting-finance", "https://www.migratemeexperts.com.au/informationtechnology", "https://www.migratemeexperts.com.au/engineering", "https://www.migratemeexperts.com.au/hospitality-cookery", "https://www.migratemeexperts.com.au/medicine-nursing", "https://www.migratemeexperts.com.au/architecture-building", "https://www.migratemeexperts.com.au/socialwork-humanity", "https://www.migratemeexperts.com.au/agriculture-horticulture"]*/
 
     @IBOutlet weak var coursestableview: UITableView!
     
@@ -45,19 +45,11 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let url = coursewebsite[indexPath.row]
-        self.openUrl(urlStr: url)
+        /*let url = coursewebsite[indexPath.row]
+        self.openUrl(urlStr: url)*/
+        let identifier = courses[indexPath.row]
+        self.performSegue(withIdentifier: identifier, sender: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     func openUrl(urlStr:String!) {
         
