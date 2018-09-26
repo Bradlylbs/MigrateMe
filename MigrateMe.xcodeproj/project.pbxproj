@@ -20,6 +20,7 @@
 		A27BDE78215491EE00B16F22 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE77215491EE00B16F22 /* CoursesViewController.swift */; };
 		A2E48E262159BF9A003D425E /* visaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E48E252159BF9A003D425E /* visaDetailViewController.swift */; };
 		A2FF89B5215B1868002746B6 /* CoursesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF89B4215B1868002746B6 /* CoursesDetailViewController.swift */; };
+		A2FF89B7215B4223002746B6 /* LivinginMelbourneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FF89B6215B4223002746B6 /* LivinginMelbourneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A27BDE77215491EE00B16F22 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		A2E48E252159BF9A003D425E /* visaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visaDetailViewController.swift; sourceTree = "<group>"; };
 		A2FF89B4215B1868002746B6 /* CoursesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetailViewController.swift; sourceTree = "<group>"; };
+		A2FF89B6215B4223002746B6 /* LivinginMelbourneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivinginMelbourneViewController.swift; sourceTree = "<group>"; };
 		DE7F72BDC12C3A1680218E34 /* Pods-MigrateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MigrateMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MigrateMe/Pods-MigrateMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				A2E48E252159BF9A003D425E /* visaDetailViewController.swift */,
 				A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */,
 				A2FF89B4215B1868002746B6 /* CoursesDetailViewController.swift */,
+				A2FF89B6215B4223002746B6 /* LivinginMelbourneViewController.swift */,
 			);
 			path = MigrateMe;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2FF89B7215B4223002746B6 /* LivinginMelbourneViewController.swift in Sources */,
 				A2E48E262159BF9A003D425E /* visaDetailViewController.swift in Sources */,
 				A27BDE5B2150A64200B16F22 /* ViewController.swift in Sources */,
 				A2FF89B5215B1868002746B6 /* CoursesDetailViewController.swift in Sources */,
