@@ -23,10 +23,6 @@ class VisasViewController: UIViewController, UITableViewDataSource, UITableViewD
         visastableview.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func backtomainpage(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-    }
         
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
