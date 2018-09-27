@@ -10,7 +10,10 @@ import UIKit
 
 class MainPageViewController: ViewController {
     
-    override func viewWillAppear(_ animated: Bool) {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         for button in VisaButtons{
             button.layer.borderColor = #colorLiteral(red: 0.6431372549, green: 0.7098039216, blue: 0.7843137255, alpha: 1)
             
@@ -18,12 +21,6 @@ class MainPageViewController: ViewController {
             
             button.layer.cornerRadius = 16
         }
-        super.viewWillAppear(true)
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     

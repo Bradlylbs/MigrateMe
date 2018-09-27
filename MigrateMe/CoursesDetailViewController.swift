@@ -26,8 +26,10 @@ class CoursesDetailViewController: UIViewController {
     
     @IBOutlet weak var argricultureWebbutton: UIButton!
     
-    
-    override func viewWillAppear(_ animated: Bool) {
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         for view in requirementsView{
             view.layer.borderColor = #colorLiteral(red: 0.6431372549, green: 0.7098039216, blue: 0.7843137255, alpha: 1)
             
@@ -35,12 +37,6 @@ class CoursesDetailViewController: UIViewController {
             
             view.layer.cornerRadius = 16
         }
-        super.viewWillAppear(true)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
