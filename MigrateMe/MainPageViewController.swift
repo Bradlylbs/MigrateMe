@@ -29,20 +29,14 @@ class MainPageViewController: ViewController {
     
     @IBOutlet var VisaButtons: [UIButton]!
     
-    @IBAction func LinktoWebsite(_ sender: UIButton) {
-        let url = "https://www.migratemeexperts.com.au/living-expenses"
-       
-        
-        self.openUrl(urlStr: url)
-    }
     
-    func openUrl(urlStr:String!) {
+    /*func openUrl(urlStr:String!) {
         
         if let url = NSURL(string:urlStr) {
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
         
-    }
+    }*/
     /*
     // MARK: - Navigation
 

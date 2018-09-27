@@ -305,6 +305,9 @@
                                                 <state key="normal" title="SKILLED MIGRATION POINTS">
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="xgk-4t-6oj" kind="show" id="20W-bu-1RR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gJS-jN-LbB">
                                                 <rect key="frame" x="190.66666666666663" y="0.0" width="144.33333333333337" height="130"/>
@@ -314,7 +317,6 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="LinktoWebsite:" destination="aW5-gg-IdP" eventType="touchUpInside" id="bGe-wX-CXk"/>
                                                     <segue destination="BSt-E9-Oux" kind="show" id="Mj4-Fs-att"/>
                                                 </connections>
                                             </button>
@@ -332,7 +334,6 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="N0c-Nf-nsv" firstAttribute="trailing" secondItem="voa-RR-UQF" secondAttribute="trailing" id="2n2-UN-hnE"/>
                             <constraint firstAttribute="trailing" secondItem="KmX-Do-gs5" secondAttribute="trailing" id="BEV-ox-nNf"/>
@@ -348,7 +349,7 @@
                         <viewLayoutGuide key="safeArea" id="N0c-Nf-nsv"/>
                     </view>
                     <navigationItem key="navigationItem" id="qPS-H9-O3H">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menuico" id="0pn-ec-rTA">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="icons8-menu" id="0pn-ec-rTA">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="dfY-4f-ZAq" kind="show" id="2rB-KV-tJ8"/>
@@ -379,7 +380,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="1328"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-68-Qno">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STUDY EXPENSES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgX-Oz-Ldm">
                                                 <rect key="frame" x="16" y="16" width="343" height="21"/>
@@ -393,39 +394,39 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="study expense" translatesAutoresizingMaskIntoConstraints="NO" id="qPY-9m-TGJ">
-                                                <rect key="frame" x="2" y="154.66666666666663" width="371" height="289"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Study Expenses2" translatesAutoresizingMaskIntoConstraints="NO" id="qPY-9m-TGJ">
+                                                <rect key="frame" x="2" y="154.66666666666666" width="371" height="154.99999999999997"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Living Expenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owT-FY-bAA">
-                                                <rect key="frame" x="16" y="463.66666666666663" width="343" height="21"/>
+                                                <rect key="frame" x="16" y="329.66666666666669" width="343" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUe-mj-Il4">
-                                                <rect key="frame" x="16" y="492.66666666666657" width="343" height="81.333333333333314"/>
+                                                <rect key="frame" x="16" y="358.66666666666669" width="343" height="81.333333333333314"/>
                                                 <string key="text">In accordance to the Department of home affairs, the minimum living cost required for the student visa is as follows and this includes:</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accomodation expenses" translatesAutoresizingMaskIntoConstraints="NO" id="yXB-Pd-qfe">
-                                                <rect key="frame" x="2" y="611.33333333333337" width="371" height="289"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Accommodation Expenses2" translatesAutoresizingMaskIntoConstraints="NO" id="yXB-Pd-qfe">
+                                                <rect key="frame" x="2" y="477.33333333333337" width="371" height="164"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOMODATION EXPENSES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ng-6v-SQ0">
-                                                <rect key="frame" x="16" y="582" width="343" height="19.333333333333371"/>
+                                                <rect key="frame" x="16" y="448" width="343" height="19.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="0.15280184429999999" green="0.53719952130000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTHER EXPENSES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVO-zR-YIA">
-                                                <rect key="frame" x="16" y="915.33333333333337" width="343" height="19.333333333333371"/>
+                                                <rect key="frame" x="16" y="656.33333333333337" width="343" height="19.333333333333371"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" red="0.15280184429999999" green="0.53719952130000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other expense" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-uD-j0D">
-                                                <rect key="frame" x="2" y="949.66666666666674" width="371" height="208"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Other Expenses2" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-uD-j0D">
+                                                <rect key="frame" x="2" y="690.66666666666663" width="371" height="137"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -438,7 +439,7 @@
                                             <constraint firstAttribute="trailing" secondItem="yXB-Pd-qfe" secondAttribute="trailing" constant="2" id="8Pg-6Z-pLp"/>
                                             <constraint firstAttribute="trailing" secondItem="qPY-9m-TGJ" secondAttribute="trailing" constant="2" id="9Hf-xP-elU"/>
                                             <constraint firstAttribute="trailing" secondItem="BUe-mj-Il4" secondAttribute="trailing" constant="16" id="Cd2-cK-ev9"/>
-                                            <constraint firstAttribute="height" constant="1300" id="E7v-q6-jsb"/>
+                                            <constraint firstAttribute="height" constant="1800" id="E7v-q6-jsb"/>
                                             <constraint firstItem="NgX-Oz-Ldm" firstAttribute="top" secondItem="sIc-68-Qno" secondAttribute="top" constant="16" id="EVm-tX-k2k"/>
                                             <constraint firstItem="s81-9H-ewF" firstAttribute="leading" secondItem="sIc-68-Qno" secondAttribute="leading" constant="16" id="Eot-W0-1XZ"/>
                                             <constraint firstItem="owT-FY-bAA" firstAttribute="leading" secondItem="sIc-68-Qno" secondAttribute="leading" constant="16" id="JGp-16-Eb7"/>
@@ -483,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k3Z-yF-xOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="1097"/>
+            <point key="canvasLocation" x="3346" y="1190"/>
         </scene>
         <!--Visas View Controller-->
         <scene sceneID="WO5-Jd-n5U">
@@ -500,7 +501,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M7u-Nv-7sg">
-                                <rect key="frame" x="0.0" y="296" width="375" height="482"/>
+                                <rect key="frame" x="0.0" y="288" width="375" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VisaCell" textLabel="zuw-SP-Bkd" style="IBUITableViewCellStyleDefault" id="AG0-lf-xbE">
@@ -530,7 +531,7 @@
                             <constraint firstItem="M7u-Nv-7sg" firstAttribute="trailing" secondItem="9Jj-BC-GMv" secondAttribute="trailing" id="jYV-0l-4TU"/>
                             <constraint firstItem="gVH-bq-ofh" firstAttribute="trailing" secondItem="9Jj-BC-GMv" secondAttribute="trailing" id="kkE-wT-786"/>
                             <constraint firstItem="M7u-Nv-7sg" firstAttribute="leading" secondItem="9Jj-BC-GMv" secondAttribute="leading" id="oX1-Le-zJf"/>
-                            <constraint firstItem="M7u-Nv-7sg" firstAttribute="firstBaseline" secondItem="gVH-bq-ofh" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="z33-fe-XDL"/>
+                            <constraint firstItem="M7u-Nv-7sg" firstAttribute="firstBaseline" secondItem="gVH-bq-ofh" secondAttribute="baseline" id="z33-fe-XDL"/>
                             <constraint firstItem="M7u-Nv-7sg" firstAttribute="bottom" secondItem="9Jj-BC-GMv" secondAttribute="bottom" id="zNP-jd-59Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Jj-BC-GMv"/>
@@ -612,7 +613,7 @@
                         <segue destination="M6B-AQ-rJ6" kind="presentation" identifier="Engineering" id="PBN-BR-Ocl"/>
                         <segue destination="had-hb-XFg" kind="presentation" identifier="Cookery &amp; Hospitality Management" id="2IQ-kG-hdr"/>
                         <segue destination="VFU-zU-FhL" kind="presentation" identifier="Medicine &amp; Nursing" id="hWS-OW-m0Y"/>
-                        <segue destination="wsJ-Ec-miO" kind="presentation" identifier="Architecuture and Building" id="J1U-JV-yVl"/>
+                        <segue destination="wsJ-Ec-miO" kind="presentation" identifier="Architecture and Building" id="J1U-JV-yVl"/>
                         <segue destination="Mo8-fZ-XZh" kind="presentation" identifier="Social Work &amp; Humanity" id="6IM-SP-DtD"/>
                         <segue destination="LVa-3i-ond" kind="presentation" identifier="Agriculture &amp; Horticulture" id="Int-1Q-YQq"/>
                     </connections>
@@ -1181,16 +1182,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YMh-Wy-jx1">
-                                <rect key="frame" x="16" y="262" width="343" height="122"/>
+                                <rect key="frame" x="16" y="262" width="343" height="81.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. SPONSORSHIP LETTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-B8-NsK">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="61"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need an approval sponsor letter from your employer and MigrateMe People can help you with this." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvh-BX-ooc">
-                                        <rect key="frame" x="0.0" y="61" width="343" height="61"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333314" width="343" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1198,16 +1199,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="QKR-p0-jn7">
-                                <rect key="frame" x="16" y="409" width="343" height="81.333333333333314"/>
+                                <rect key="frame" x="16" y="368.33333333333331" width="343" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. SOL LIST NOMINATE POSITION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txA-DV-ONA">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.15280184429999999" green="0.53719952130000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Making sure your employer must be an approved business sponsor." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arj-0f-gfk">
-                                        <rect key="frame" x="0.0" y="40.666666666666686" width="343" height="40.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333368" width="343" height="40.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1215,16 +1216,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="lMF-ay-s6l">
-                                <rect key="frame" x="16" y="515.33333333333337" width="343" height="122"/>
+                                <rect key="frame" x="16" y="454.33333333333331" width="343" height="81.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. VISA APPLICATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRG-KH-906">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="61"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.15280184429999999" green="0.53719952130000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After meeting the basic criteria of the employer visa process. MigrateMe people will help you in your visa process." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxj-Qm-Xe6">
-                                        <rect key="frame" x="0.0" y="61" width="343" height="61"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333371" width="343" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1232,7 +1233,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4X-eG-lRH">
-                                <rect key="frame" x="16" y="657.33333333333337" width="343" height="34"/>
+                                <rect key="frame" x="16" y="555.66666666666663" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Click Here For More Information">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1434,7 +1435,7 @@
                                 <rect key="frame" x="16" y="736" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Click Here For More Information">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="gotoStudentVisaWeb:" destination="kk7-BD-hIV" eventType="touchUpInside" id="aW3-bW-cB2"/>
@@ -1452,7 +1453,7 @@
                             <constraint firstItem="xep-c7-0eh" firstAttribute="leading" secondItem="svA-Ep-hHQ" secondAttribute="leading" constant="16" id="iYI-fp-hu5"/>
                             <constraint firstItem="svA-Ep-hHQ" firstAttribute="trailing" secondItem="xep-c7-0eh" secondAttribute="trailing" constant="16" id="jWe-dA-KSP"/>
                             <constraint firstItem="svA-Ep-hHQ" firstAttribute="bottom" secondItem="wPo-8w-6yM" secondAttribute="bottom" constant="8" id="qiq-IO-DF1"/>
-                            <constraint firstItem="xep-c7-0eh" firstAttribute="firstBaseline" secondItem="KK9-rR-UJa" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="qs7-ZB-NTh"/>
+                            <constraint firstItem="xep-c7-0eh" firstAttribute="firstBaseline" secondItem="KK9-rR-UJa" secondAttribute="baseline" constant="12.333333333333334" symbolType="layoutAnchor" id="qs7-ZB-NTh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="svA-Ep-hHQ"/>
                     </view>
@@ -1466,7 +1467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTv-uy-GoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="378"/>
+            <point key="canvasLocation" x="-607.20000000000005" y="377.58620689655174"/>
         </scene>
         <!--Visa Detail View Controller-->
         <scene sceneID="vHq-b6-R7l">
@@ -3279,7 +3280,7 @@
         <!--Navigation Controller-->
         <scene sceneID="K5m-m5-q0x">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="kR9-ts-q6h" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kR9-ts-q6h" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lsq-Lg-F7c">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -3294,22 +3295,65 @@
             </objects>
             <point key="canvasLocation" x="1245.5999999999999" y="160.34482758620689"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ahQ-4h-oup">
+            <objects>
+                <viewController id="xgk-4t-6oj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bH2-0g-5fy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNj-sL-cVh">
+                                <rect key="frame" x="0.0" y="88" width="375" height="1078"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avV-Br-yqJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="QTX-Jm-t80"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="avV-Br-yqJ" secondAttribute="bottom" id="LBc-fS-shk"/>
+                                    <constraint firstAttribute="trailing" secondItem="avV-Br-yqJ" secondAttribute="trailing" id="OtH-dl-JJf"/>
+                                    <constraint firstItem="avV-Br-yqJ" firstAttribute="top" secondItem="vNj-sL-cVh" secondAttribute="top" id="RTT-RN-ngh"/>
+                                    <constraint firstItem="avV-Br-yqJ" firstAttribute="leading" secondItem="vNj-sL-cVh" secondAttribute="leading" id="ugi-U5-tUT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Ry-La-N4j" firstAttribute="trailing" secondItem="vNj-sL-cVh" secondAttribute="trailing" id="f0B-d3-nEi"/>
+                            <constraint firstItem="vNj-sL-cVh" firstAttribute="leading" secondItem="8Ry-La-N4j" secondAttribute="leading" id="kKh-Zg-x64"/>
+                            <constraint firstItem="vNj-sL-cVh" firstAttribute="top" secondItem="8Ry-La-N4j" secondAttribute="top" id="lza-HO-hSa"/>
+                            <constraint firstItem="8Ry-La-N4j" firstAttribute="bottom" secondItem="vNj-sL-cVh" secondAttribute="bottom" id="r5L-fU-iJZ"/>
+                            <constraint firstItem="avV-Br-yqJ" firstAttribute="width" secondItem="bH2-0g-5fy" secondAttribute="width" id="xDg-gh-Doq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Ry-La-N4j"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVA-tO-1em" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1242" y="1097"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Accommodation Expenses2" width="282" height="164"/>
         <image name="BusinessVisaProcess" width="1153" height="582"/>
         <image name="Main Logo" width="841.91998291015625" height="240"/>
         <image name="MainBackground" width="2150" height="2941"/>
-        <image name="accomodation expenses" width="668" height="289"/>
+        <image name="Other Expenses2" width="280" height="137"/>
+        <image name="Study Expenses2" width="284" height="155"/>
         <image name="australia" width="100" height="100"/>
         <image name="coe approval" width="100" height="100"/>
         <image name="college" width="100" height="100"/>
         <image name="document2" width="100" height="100"/>
         <image name="health insurance" width="100" height="100"/>
+        <image name="icons8-menu" width="25" height="25"/>
         <image name="medical check" width="100" height="100"/>
-        <image name="menuico" width="32" height="32"/>
         <image name="offerletter" width="100" height="100"/>
-        <image name="other expense" width="667" height="208"/>
         <image name="passport" width="100" height="100"/>
-        <image name="study expense" width="659" height="289"/>
     </resources>
 </document>
