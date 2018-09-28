@@ -59,7 +59,6 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
         default:
             cell.textLabel?.text = collegeCourses.courses[indexPath.row].name
         }
-        //cell.textLabel?.text = courses[indexPath.row]
         return cell
     }
     
@@ -78,10 +77,15 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "coursedetailpage"{
             let destinationvc = segue.destination as? CourseDetailPageViewController
             destinationvc?.course = selectedCourse
+            //let backItem = UIBarButtonItem()
+            //backItem.title = "Courses"
+            //navigationItem.backBarButtonItem = backItem
+            destinationvc?.navigationItem.titleView = customizedlabel(name: selectedCourse.name)
         }
     }
 
@@ -91,5 +95,27 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
         
+    }
+}
+
+extension UIViewController {
+    var contents: UIViewController{
+        if let navcon = self as? UINavigationController {
+            return navcon.visibleViewController ?? self
+        }
+        else{
+            return self
+        }
+    }
+    
+    func customizedlabel(name text : String) -> UILabel{
+        let label: UILabel = UILabel()
+        label.backgroundColor = UIColor.clear
+        label.numberOfLines = 2
+        label.font = UIFont.boldSystemFont(ofSize: 15.0)
+        label.textAlignment = .center
+        label.textColor = UIColor.black
+        label.text = text
+        return label
     }
 }

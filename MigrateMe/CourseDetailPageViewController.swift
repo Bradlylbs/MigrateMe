@@ -14,8 +14,6 @@ class CourseDetailPageViewController: UIViewController {
     
     var coursewebsite = ""
     
-    @IBOutlet weak var titlelabel: UILabel!
-    
     @IBOutlet weak var descriptionlabel: UILabel!
     
     @IBOutlet var iconimages: [UIView]!
@@ -29,8 +27,7 @@ class CourseDetailPageViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        titlelabel.text? = course.name
+        
         coursewebsite = course.website
         descriptionlabel.text? = course.description
         for view in iconimages{

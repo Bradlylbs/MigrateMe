@@ -25,6 +25,28 @@ class MainPageViewController: ViewController {
     
     @IBOutlet var VisaButtons: [UIButton]!
     
+    @IBAction func gotovisapage(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Visa", sender: nil)
+    }
+    
+    @IBAction func gotocoursepage(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Course", sender: nil)
+    }
+    
+    @IBAction func gotoskilledpoints(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Skilled Points", sender: nil)
+    }
+    
+    @IBAction func gotolivinginmelbournepage(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "Living in Melbourne", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination
+        vc.navigationItem.title = segue.identifier
+        
+    }
+    
     
 
 }

@@ -105,11 +105,11 @@
 				A27BDE6B2150B1F500B16F22 /* MainPageViewController.swift */,
 				A27BDE6D21546A1600B16F22 /* SideMenuTableViewController.swift */,
 				A27BDE6F21547EA300B16F22 /* VisasViewController.swift */,
-				A27BDE77215491EE00B16F22 /* CoursesViewController.swift */,
 				A2E48E252159BF9A003D425E /* visaDetailViewController.swift */,
+				A27BDE77215491EE00B16F22 /* CoursesViewController.swift */,
+				A2FF89D6215CB053002746B6 /* CourseDetailPageViewController.swift */,
 				A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */,
 				A2FF89B6215B4223002746B6 /* LivinginMelbourneViewController.swift */,
-				A2FF89D6215CB053002746B6 /* CourseDetailPageViewController.swift */,
 				A234AE1B215CF16C00F1A8C9 /* Course.swift */,
 			);
 			path = MigrateMe;
@@ -332,10 +332,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-w";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -387,9 +388,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-w";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -405,13 +407,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.MigrateMeEx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = MigrateMe/MigrateMe.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -426,13 +429,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Boshi-Liu.MigrateMeEx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = MigrateMe/MigrateMe.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
