@@ -10,13 +10,17 @@ import UIKit
 
 class LivinginMelbourneViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func livinginMelbourneWebsite(_ sender: UIButton) {
+        let urlStr = "https://www.migratemeexperts.com.au/living-expenses"
+        if let url = NSURL(string:urlStr) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
     }
     
-   
+    @IBOutlet weak var websiteButton: UIButton!{
+        didSet{
+            websiteButton.titleLabel?.numberOfLines = 0
+        }
+    }
     
-
 }

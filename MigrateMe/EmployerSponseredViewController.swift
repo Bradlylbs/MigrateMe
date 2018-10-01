@@ -41,10 +41,6 @@ class EmployerSponseredViewController: UIViewController {
         openUrl(urlStr: "https://www.migratemeexperts.com.au/partnervisa")
     }
     
-    @IBAction func backtoMainPate(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     
     func openUrl(urlStr:String!) {
         
