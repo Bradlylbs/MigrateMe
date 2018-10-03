@@ -9,8 +9,6 @@
 import UIKit
 
 class visaDetailViewController: UIViewController {
-
-    @IBOutlet var visaViews: [UIView]!
     
     @IBOutlet var visaView: [UIView]!
     
@@ -32,11 +30,6 @@ class visaDetailViewController: UIViewController {
         }
     }
     
-    
-    
-    @IBAction func backToPreviousPage(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

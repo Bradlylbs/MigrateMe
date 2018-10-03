@@ -54,5 +54,10 @@ class VisasViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dc = segue.destination
+        dc.navigationItem.title = segue.identifier
+    }
 
 }

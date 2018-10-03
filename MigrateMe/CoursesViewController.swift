@@ -21,9 +21,9 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     lazy var basicdata = BasicData()
     
-    let vetCourses = Coursegroup(name: "Vet Course", courses: BasicData.setvetcourse())
+    let vetCourses = Coursegroup(name: "VET Course", courses: BasicData.setvetcourse())
     
-    let collegeCourses = Coursegroup(name: "College Course", courses: BasicData.setcollegecourse())
+    let collegeCourses = Coursegroup(name: "University Course", courses: BasicData.setcollegecourse())
     
 
     @IBOutlet weak var coursestableview: UITableView!
@@ -82,9 +82,7 @@ class CoursesViewController: UIViewController, UITableViewDataSource, UITableVie
         if segue.identifier == "coursedetailpage"{
             let destinationvc = segue.destination as? CourseDetailPageViewController
             destinationvc?.course = selectedCourse
-            //let backItem = UIBarButtonItem()
-            //backItem.title = "Courses"
-            //navigationItem.backBarButtonItem = backItem
+            
             destinationvc?.navigationItem.titleView = customizedlabel(name: selectedCourse.name)
         }
     }

@@ -13,8 +13,8 @@
 		A212FD162161F32200536F01 /* EnglishLevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212FD152161F32200536F01 /* EnglishLevelTableViewCell.swift */; };
 		A21C4B1A215A12060054A10C /* EmployerSponseredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */; };
 		A234AE1C215CF16C00F1A8C9 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A234AE1B215CF16C00F1A8C9 /* Course.swift */; };
+		A24C5DFF21644F02009C67BC /* NewMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C5DFE21644F02009C67BC /* NewMainPageViewController.swift */; };
 		A27BDE592150A64200B16F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE582150A64200B16F22 /* AppDelegate.swift */; };
-		A27BDE5B2150A64200B16F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDE5A2150A64200B16F22 /* ViewController.swift */; };
 		A27BDE5E2150A64200B16F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE5C2150A64200B16F22 /* Main.storyboard */; };
 		A27BDE602150A64300B16F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE5F2150A64300B16F22 /* Assets.xcassets */; };
 		A27BDE632150A64300B16F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27BDE612150A64300B16F22 /* LaunchScreen.storyboard */; };
@@ -35,9 +35,9 @@
 		A212FD152161F32200536F01 /* EnglishLevelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishLevelTableViewCell.swift; sourceTree = "<group>"; };
 		A21C4B19215A12060054A10C /* EmployerSponseredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerSponseredViewController.swift; sourceTree = "<group>"; };
 		A234AE1B215CF16C00F1A8C9 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		A24C5DFE21644F02009C67BC /* NewMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMainPageViewController.swift; sourceTree = "<group>"; };
 		A27BDE552150A64200B16F22 /* MigrateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MigrateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BDE582150A64200B16F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A27BDE5A2150A64200B16F22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A27BDE5D2150A64200B16F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A27BDE5F2150A64300B16F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27BDE622150A64300B16F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				A27BDE76215484D200B16F22 /* Supporting Files */,
-				A27BDE5A2150A64200B16F22 /* ViewController.swift */,
 				A27BDE5C2150A64200B16F22 /* Main.storyboard */,
 				A27BDE642150A64300B16F22 /* Info.plist */,
 				A27BDE6A2150A82600B16F22 /* MigrateMe.h */,
@@ -120,6 +119,7 @@
 				A212FD112161A3DB00536F01 /* SkilledPointsViewController.swift */,
 				A212FD132161DACF00536F01 /* SkilledPoints.swift */,
 				A212FD152161F32200536F01 /* EnglishLevelTableViewCell.swift */,
+				A24C5DFE21644F02009C67BC /* NewMainPageViewController.swift */,
 			);
 			path = MigrateMe;
 			sourceTree = "<group>";
@@ -258,10 +258,10 @@
 				A234AE1C215CF16C00F1A8C9 /* Course.swift in Sources */,
 				A2FF89B7215B4223002746B6 /* LivinginMelbourneViewController.swift in Sources */,
 				A2E48E262159BF9A003D425E /* visaDetailViewController.swift in Sources */,
-				A27BDE5B2150A64200B16F22 /* ViewController.swift in Sources */,
 				A212FD162161F32200536F01 /* EnglishLevelTableViewCell.swift in Sources */,
 				A27BDE6C2150B1F500B16F22 /* MainPageViewController.swift in Sources */,
 				A212FD142161DACF00536F01 /* SkilledPoints.swift in Sources */,
+				A24C5DFF21644F02009C67BC /* NewMainPageViewController.swift in Sources */,
 				A2FF89D7215CB053002746B6 /* CourseDetailPageViewController.swift in Sources */,
 				A27BDE7021547EA300B16F22 /* VisasViewController.swift in Sources */,
 				A27BDE592150A64200B16F22 /* AppDelegate.swift in Sources */,
@@ -419,7 +419,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJZ8GTCP4S;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
